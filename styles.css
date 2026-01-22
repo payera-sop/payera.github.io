@@ -23,10 +23,10 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
 }
 
 .logo {
-  height: 40px;          /* Adjust this value to fit your header nicely */
+  height: 150px;          /* Adjust this value to fit your header nicely */
   width: auto;           /* Keeps aspect ratio */
   vertical-align: middle;
-  max-width: 270px;      /* Prevents it from getting too wide on large screens */
+  max-width: 300px;      /* Prevents it from getting too wide on large screens */
 }
 
 /* Optional: make it look better on mobile */
