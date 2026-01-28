@@ -144,6 +144,10 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
+  padding: 0.7rem 2rem;        /* taller but narrower feel */
+  border-radius: 999px;
+  min-width: 140px;            /* forces it to stay slim */
+  font-weight: 500;
 }
 
 .hero-content .btn:hover {
