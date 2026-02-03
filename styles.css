@@ -142,7 +142,7 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
 /* Make button stand out more if needed */
 .hero-content .btn {
   background: var(--accent);
-  color: #fff;
+  color: #D4AF37;
   border-color: var(--accent);
   padding: 0.7rem 2rem;        /* taller but narrower feel */
   border-radius: 999px;
@@ -151,8 +151,8 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
 }
 
 .hero-content .btn:hover {
-  background: #c4a07f;
-  border-color: #c4a07f;
+  background: #D4AF37;
+  border-color: #D4AF37;
 }
 
 /* Responsive height adjustments */
