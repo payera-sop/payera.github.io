@@ -76,43 +76,31 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
 /* Hero Slider */
 .hero-slider {
   position: relative;
-  height: 500px;          /* ← adjust this to match your preferred hero height */
+  height: 500px;
   overflow: hidden;
-  background: var(--accent); /* fallback color during load */
+  background: var(--accent);
 }
 
 .slides {
   position: absolute;
   inset: 0;
-  display: flex;
-  width: 400%;            /* 100% × 4 (3 slides + duplicate) */
-  animation: slideShow 24s infinite ease-in-out;   /* 24s = ~8s per image */
 }
 
-.slide {
-  flex: 0 0 25%;          /* each slide = 25% of total width (400%) */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.slide-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
 }
 
-.slide-1 { background-image: url('images/Gallery1.png'); }
-.slide-2 { background-image: url('images/candle2.png'); }
-.slide-3 { background-image: url('images/candle3.png'); }
-
-/* Infinite loop animation */
-@keyframes slideShow {
-  0%    { transform: translateX(0); }
-  8%    { transform: translateX(0); }     /* hold slide 1 */
-  25%   { transform: translateX(-25%); }  /* move to slide 2 */
-  33%   { transform: translateX(-25%); }  /* hold slide 2 */
-  50%   { transform: translateX(-50%); }  /* move to slide 3 */
-  58%   { transform: translateX(-50%); }  /* hold slide 3 */
-  75%   { transform: translateX(-75%); }  /* move to duplicated slide 1 */
-  83%   { transform: translateX(-75%); }  /* hold */
-  100%  { transform: translateX(0); }     /* snap back to start (invisible jump) */
+.slide-img.active {
+  opacity: 1;
 }
 
+/* Remove the old animation keyframes entirely for now – or keep very simple fade */
 /* Overlay content (same as before, now positioned absolutely) */
 .hero-content {
   position: absolute;
@@ -314,3 +302,12 @@ blockquote{font-style:italic;color:#666;border-left:4px solid var(--accent);padd
     margin: 0;
   }
 }
+<script>
+  const images = document.querySelectorAll('.slide-img');
+  let current = 0;
+  setInterval(() => {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
+  }, 8000);
+</script>
