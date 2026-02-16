@@ -2,7 +2,7 @@
 *{box-sizing:border-box;}
 body{margin:0;font-family:'Helvetica Neue',Arial,sans-serif;color:#333;background:var(--bg);line-height:1.6;}
 .container{max-width:var(--max);margin:0 auto;padding:1rem;}
-.site-header{background:#fff;border-bottom:1px solid #eee;padding:.75rem 0;position: sticky;
+.site-header{background:#fff;border-bottom:1px solid #eee;padding: 0.5rem 0;position: sticky;
   top: 0;
   z-index: 1000;           /* Keeps it above other content */
   width: 100%;}
