@@ -133,14 +133,21 @@ body{
   text-align:center;
   transition:transform .25s ease, box-shadow .25s;
 }
-.card:hover{transform:translateY(-6px);box-shadow:0 12px 34px rgba(0,0,0,0.06)}
 .card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;        /* keep full candle visible */
-  background-color: #fffdf9;  /* subtle backdrop */
-  border-radius: 8px;
-  margin-bottom: .9rem;
+  height: 260px;                /* fixed, consistent height */
+  object-fit: cover;            /* fills frame neatly, mild crop */
+  object-position: center;      /* keeps focus centered */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #fffdf9;    /* subtle warm backdrop */
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06); /* light depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.02);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
 }
 
 /* Forms */
