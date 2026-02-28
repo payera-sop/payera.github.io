@@ -1,11 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PAYERA Candles — Products</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description"
+    content="Hand-poured soy candles crafted with essential oils — Mysore Sandalwood, Lavender &amp; Sandalwood, Pure Lavender.">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-   <link rel="icon" href="/favicon-48x48.png" type="image/png">
+  <link rel="icon" href="/favicon-48x48.png" type="image/png">
   <link rel="icon" href="/favicon-96x96.png" type="image/png"> 
   <link rel="icon" href="/favicon_32x32.png" type="image/png">
 </head>
@@ -27,47 +33,135 @@
   </header>
 
   <main>
-    <section class="container" style="padding-top:2.25rem">
-      <h2 style="font-family:'Playfair Display',serif">Our Candle Collection</h2>
-      <p class="small">All candles are hand-poured in small batches using soy wax, cotton wicks, and natural fragrance oils.</p>
 
-      <div class="grid" style="margin-top:1.25rem">
-        <article class="card">
-          <img src="images/sandalwood.png" alt="Sandalwood">
-          <div class="content">
-          <h3>Mysore Sandalwood</h3>
-          <p class="small">Soothing Sandalwood</p>
-          <p class="price">200g — ₹800</p>
-           <p class="stock">In stock</p>
-          <a class="btn whatsapp-btn" href="https://wa.me/919036864225?text=I'm%20interested%20in%20ordering%20the%20Sandalwood%20candle." target="_blank">Order on WhatsApp</a>
-        </article>
+    <!-- ── Page Hero ──────────────────────────────── -->
+    <section class="products-hero">
+      <div class="products-hero-inner container">
+        <p class="products-hero-eyebrow">Small-batch · Hand-poured · Intentional</p>
+        <h1 class="products-hero-title">Our Candle Collection</h1>
 
-    
-
-        <article class="card">
-        <img src="images/Lavendar Scented Candle.png" alt="Lavender and Sandalwood">
-        <div class="content">
-        <h3>Lavender & Sandalwood</h3>
-        <p>Cozy scent for evenings</p>
-        <p class="price">200g — ₹800</p>
-        <p class="stock">In stock</p>
-       <a href="https://wa.me/919xxxxxxxxx?text=Hi%20I%20want%20to%20order%20Amber%20%26%20Vanilla" 
-       class="btn whatsapp-btn" target="_blank">
-      Order on WhatsApp
-    </a>
-  </div>
-</article>
-
-        <article class="card">
-          <img src="images/Lavender Scented.png" alt="Lavender SCented Candle">
-           <div class="content">
-          <h3>Pure Lavender</h3>
-          <p class="small">Calming and clean </p>
-          <p class="price">200g — ₹800</p>
-          <p class="stock-status">In stock</p>
-          <a class="btn whatsapp-btn" href="https://wa.me/919036864225?text=Please%20share%20details" target="_blank">Order on WhatsApp</a>
-        </article>
+        <!-- ── Craft Promise Strip ────────────────────── -->
+        <div class="craft-strip-inner">
+          <div class="craft-strip-item">
+            <span class="craft-strip-icon" aria-hidden="true">🌿</span>
+            <span class="craft-strip-label">Soy &amp; Coconut Wax</span>
+          </div>
+          <div class="craft-strip-sep" aria-hidden="true"></div>
+          <div class="craft-strip-item">
+            <span class="craft-strip-icon" aria-hidden="true">🪵</span>
+            <span class="craft-strip-label">Crackling Wooden Wicks</span>
+          </div>
+          <div class="craft-strip-sep" aria-hidden="true"></div>
+          <div class="craft-strip-item">
+            <span class="craft-strip-icon" aria-hidden="true">🌸</span>
+            <span class="craft-strip-label">Pure Essential Oils</span>
+          </div>
+          <div class="craft-strip-sep" aria-hidden="true"></div>
+          <div class="craft-strip-item">
+            <span class="craft-strip-icon" aria-hidden="true">✋</span>
+            <span class="craft-strip-label">Small-Batch Handcrafted</span>
+          </div>
+        </div>
       </div>
+      <div class="products-hero-divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- ── Product Grid ───────────────────────────── -->
+    <section class="products-section container" aria-label="Products">
+
+      <ul class="products-grid" role="list">
+
+        <!-- ── Card 1: Mysore Sandalwood ── -->
+        <li class="product-card">
+          <div class="product-card-image">
+            <img src="images/sandalwood.png" alt="Mysore Sandalwood candle" loading="lazy">
+          </div>
+          <div class="product-card-info">
+            <div class="product-card-meta">
+              <span class="product-card-category">Rituals &amp; Prayers</span>
+              <span class="product-card-stock">In Stock</span>
+            </div>
+            <h2 class="product-title">Mysore Sandalwood</h2>
+            <p class="product-card-description">Warm, woody, grounding — the ancient calm of Mysore sandalwood in every
+              pour.</p>
+            <div class="product-card-price-row">
+              <span class="product-card-pricetag">200g - ₹800</span>
+              <a class="product-card-btn"
+                href="https://wa.me/919036864225?text=I'm%20interested%20in%20ordering%20the%20Sandalwood%20candle."
+                target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.136.561 4.14 1.535 5.876L.057 23.929c-.044.178.024.365.174.466.09.06.196.09.303.09a.5.5 0 00.165-.028l6.27-2.019A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.867 9.867 0 01-5.02-1.372l-.36-.213-3.724 1.198 1.224-3.626-.235-.374A9.867 9.867 0 012.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z" />
+                </svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- ── Card 2: Lavender & Sandalwood ── -->
+        <li class="product-card">
+          <div class="product-card-image">
+            <img src="images/Lavendar Scented Candle.png" alt="Lavender and Sandalwood candle" loading="lazy">
+          </div>
+          <div class="product-card-info">
+            <div class="product-card-meta">
+              <span class="product-card-category">Gifting &amp; Home</span>
+              <span class="product-card-stock">In Stock</span>
+            </div>
+            <h2 class="product-title">Lavender &amp; Sandalwood</h2>
+            <p class="product-card-description">A cosy evening in a jar — soft lavender over warm sandalwood, made for
+              unwinding.</p>
+            <div class="product-card-price-row">
+              <span class="product-card-pricetag">200g - ₹800</span>
+              <a class="product-card-btn"
+                href="https://wa.me/919036864225?text=I'm%20interested%20in%20ordering%20Lavender%20%26%20Sandalwood."
+                target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.136.561 4.14 1.535 5.876L.057 23.929c-.044.178.024.365.174.466.09.06.196.09.303.09a.5.5 0 00.165-.028l6.27-2.019A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.867 9.867 0 01-5.02-1.372l-.36-.213-3.724 1.198 1.224-3.626-.235-.374A9.867 9.867 0 012.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z" />
+                </svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- ── Card 3: Pure Lavender ── -->
+        <li class="product-card">
+          <div class="product-card-image">
+            <img src="images/Lavender Scented.png" alt="Pure Lavender candle" loading="lazy">
+          </div>
+          <div class="product-card-info">
+            <div class="product-card-meta">
+              <span class="product-card-category">Exclusives</span>
+              <span class="product-card-stock">In Stock</span>
+            </div>
+            <h2 class="product-title">Pure Lavender</h2>
+            <p class="product-card-description">Clean, calming, and timeless — pure lavender distilled into stillness.
+            </p>
+            <div class="product-card-price-row">
+              <span class="product-card-pricetag">200g - ₹800</span>
+              <a class="product-card-btn"
+                href="https://wa.me/919036864225?text=I'm%20interested%20in%20ordering%20Pure%20Lavender."
+                target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.136.561 4.14 1.535 5.876L.057 23.929c-.044.178.024.365.174.466.09.06.196.09.303.09a.5.5 0 00.165-.028l6.27-2.019A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.867 9.867 0 01-5.02-1.372l-.36-.213-3.724 1.198 1.224-3.626-.235-.374A9.867 9.867 0 012.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z" />
+                </svg>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
     </section>
   </main>
 
